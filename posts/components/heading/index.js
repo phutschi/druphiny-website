@@ -9,15 +9,15 @@ type Props = {
   children?: React.Node
 }
 
-const Heading = ({ id, level, fontSize, children }: Props) => (
+const Heading = ( { id, level, fontSize, children }: Props ) => (
   <div>
     {
-      React.createElement(`h${level}`,
-        { style: { fontWeight: 500, fontSize } },
+      React.createElement( `h${level}`,
+        { style : { fontWeight : 500, fontSize } },
         <span>
           <a href={`#${id}`} id={id}>#</a>
         </span>,
-        children
+        children,
       )
     }
 
@@ -42,15 +42,29 @@ const Heading = ({ id, level, fontSize, children }: Props) => (
 )
 
 Heading.defaultProps = {
-  id: '',
-  level: 1,
-  fontSize: 18,
-  children: []
+  id        : '',
+  level     : 1,
+  fontSize  : 18,
+  children  : [],
 }
 
 const H1 = Heading
-const H2 = (props: Props) => Heading({...props, level: 2, fontSize: 16 })
-const H3 = (props: Props) => Heading({...props, level: 3, fontSize: 14 })
-const H4 = (props: Props) => Heading({...props, level: 4, fontSize: 12 })
+const H2 = ( props: Props ) => Heading( {
+  ...props,
+  level     : 2,
+  fontSize  : 16,
+} )
+
+const H3 = ( props: Props ) => Heading( {
+  ...props,
+  level     : 3,
+  fontSize  : 14,
+} )
+
+const H4 = ( props: Props ) => Heading( {
+  ...props,
+  level     : 4,
+  fontSize  : 12,
+} )
 
 export { H1, H2, H3, H4 }

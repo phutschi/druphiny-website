@@ -3,10 +3,10 @@
 import * as React from 'react'
 
 type Props = {
-  children: React.Node,
+  children  : React.Node,
 }
 
-export default ({ children }: Props) => (
+const Code = ( { children }: Props ) => (
   <code>
     { children }
     <style jsx>{`
@@ -17,3 +17,5 @@ export default ({ children }: Props) => (
     `}</style>
   </code>
 )
+
+export default Code

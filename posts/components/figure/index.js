@@ -3,17 +3,17 @@
 import * as React from 'react'
 
 export type FigureProps = {
-  desc?: string,
-  href: string,
-  children?: React.Node,
-  wide?: boolean
+  desc?     : string,
+  href      : string,
+  children? : React.Node,
+  wide?     : boolean
 }
 
-const Figure = ({ desc, href, children, wide }: FigureProps) => (
+const Figure = ( { desc, href, children, wide }: FigureProps ) => (
   <div className={wide && 'wide'}>
     { href
-        ? <a href={href} target="_blank">{ children }</a>
-        : children }
+      ? <a href={href} target="_blank">{ children }</a>
+      : children }
     {
       desc && <p>
         { desc }
@@ -49,9 +49,9 @@ const Figure = ({ desc, href, children, wide }: FigureProps) => (
 )
 
 Figure.defaultProps = {
-  desc: 'Figure',
-  children: <span>default child</span>,
-  wide: false
+  desc      : 'Figure',
+  children  : <span>default child</span>,
+  wide      : false,
 }
 
 export default Figure

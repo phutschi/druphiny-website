@@ -3,16 +3,16 @@
 import * as React from 'react'
 
 type VideoProps = {
-  videoSrc: string,
-  trackSrc: string,
-  trackSrcLang: string,
+  videoSrc      : string,
+  trackSrc      : string,
+  trackSrcLang  : string,
 }
 
-const Video = (props: VideoProps) => (
+const Video = ( props: VideoProps ) => (
   <div>
     <video autoPlay loop src={props.videoSrc}>
       <track
-        kind='captions'
+        kind="captions"
         src={props.trackSrc}
         srcLang={props.trackSrcLang}
         default

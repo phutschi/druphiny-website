@@ -3,17 +3,17 @@
 import * as React from 'react'
 
 type Props = {
-  by: string,
-  children?: React.Node
+  by        : string,
+  children? : React.Node
 }
 
-const Quote = ({ by, children }: Props) => (
+const Quote = ( { by, children }: Props ) => (
   <blockquote>
     <p>
       { children }
       <br />
       {
-        by && `– ${ by }`
+        by && `– ${by}`
       }
     </p>
     <style jsx>{`
@@ -32,8 +32,8 @@ const Quote = ({ by, children }: Props) => (
 )
 
 Quote.defaultProps = {
-  by: 'Druphiny',
-  children: [],
+  by        : 'Druphiny',
+  children  : [],
 }
 
 export default Quote

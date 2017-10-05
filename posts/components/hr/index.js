@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-export default () => (
+const HR = () => (
   <div>
     <style jsx>{`
       div {
@@ -20,3 +20,5 @@ export default () => (
     `}</style>
   </div>
 )
+
+export default HR

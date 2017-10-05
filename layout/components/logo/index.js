@@ -1,6 +1,6 @@
 /* global React */
 
-export default () => (
+const Logo = () => (
   <div className="logo">
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enableBackground="new 0 0 1000 1000">
       <g>
@@ -12,3 +12,5 @@ export default () => (
     </svg>
   </div>
 )
+
+export default Logo

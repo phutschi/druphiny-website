@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const Centered = ({ children }: Props) => (
+const Centered = ( { children }: Props ) => (
   <div className="centered">
     { children }
     <style jsx global>{`
@@ -17,8 +17,6 @@ const Centered = ({ children }: Props) => (
   </div>
 )
 
-Centered.defaultProps = {
-  children: []
-}
+Centered.defaultProps = { children : [] }
 
 export default Centered

@@ -8,7 +8,7 @@ type ImageProps = {
   alt?: string,
 }
 
-const Image = (props: ImageProps) => (
+const Image = ( props: ImageProps ) => (
   <div>
     <img width={props.width} src={props.src} alt={props.alt} />
     <style jsx>{`
@@ -21,8 +21,8 @@ const Image = (props: ImageProps) => (
 )
 
 Image.defaultProps = {
-  width: '',
-  alt: '',
+  width : '',
+  alt   : '',
 }
 
 export default Image

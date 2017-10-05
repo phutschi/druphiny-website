@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const Title = ({ children }: Props) => (
+const Title = ( { children }: Props ) => (
   <div className="title">
     { children }
     <style jsx>{`
@@ -21,8 +21,6 @@ const Title = ({ children }: Props) => (
   </div>
 )
 
-Title.defaultProps = {
-  children: []
-}
+Title.defaultProps = { children : [] }
 
 export default Title

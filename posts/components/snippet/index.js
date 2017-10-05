@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const Snippet = ({ children }: Props) => (
+const Snippet = ( { children }: Props ) => (
   <pre>
     <code>{ children }</code>
     <style jsx>{`
@@ -23,8 +23,6 @@ const Snippet = ({ children }: Props) => (
   </pre>
 )
 
-Snippet.defaultProps = {
-  children: []
-}
+Snippet.defaultProps = { children : [] }
 
 export default Snippet

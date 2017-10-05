@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const Tldr = ({ children }: Props) => (
+const Tldr = ( { children }: Props ) => (
   <div className="wrap">
     <b>tl;DR:</b>
     {' '}
@@ -28,8 +28,6 @@ const Tldr = ({ children }: Props) => (
 )
 
 
-Tldr.defaultProps = {
-  children: []
-}
+Tldr.defaultProps = { children : [] }
 
 export default Tldr

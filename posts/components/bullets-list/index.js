@@ -3,10 +3,10 @@
 import * as React from 'react'
 
 type Props = {
-  children: React.Node
+  children  : React.Node
 }
 
-const List = ({ children }: Props) => (
+const List = ( { children }: Props ) => (
   <ul>
     { children }
     <style jsx>{`
@@ -19,7 +19,7 @@ const List = ({ children }: Props) => (
   </ul>
 )
 
-const ListItem = ({ children }: Props) => (
+const ListItem = ( { children }: Props ) => (
   <li>
     { children }
     <style jsx>{`

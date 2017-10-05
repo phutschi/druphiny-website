@@ -7,7 +7,7 @@ type FootNotesProps = {
   children?: React.Node
 }
 
-export const FootNotes = ({ children }: FootNotesProps) => (
+export const FootNotes = ( { children }: FootNotesProps ) => (
   <div>
     { children }
     <style jsx>{`
@@ -24,15 +24,13 @@ export const FootNotes = ({ children }: FootNotesProps) => (
   </div>
 )
 
-FootNotes.defaultProps = {
-  children: []
-}
+FootNotes.defaultProps = { children : [] }
 
 type RefProps = {
-  id?: string
+  id? : string
 }
 
-export const Ref = ({ id }: RefProps) => (
+export const Ref = ( { id }: RefProps ) => (
   <a href={`#f${id}`} id={`s${id}`}>
     [{ id }]
     <style jsx>{`
@@ -46,16 +44,14 @@ export const Ref = ({ id }: RefProps) => (
   </a>
 )
 
-Ref.defaultProps = {
-  id: ''
-}
+Ref.defaultProps = { id : '' }
 
 type NoteProps = {
   id?: string,
   children?: React.Node
 }
 
-export const Note = ({ id, children }: NoteProps) => (
+export const Note = ( { id, children }: NoteProps ) => (
   <P>
     { id }.
     {' '}
@@ -63,7 +59,7 @@ export const Note = ({ id, children }: NoteProps) => (
     {' '}
     { children }
     <style jsx>{`
-      a {
+      a { // $FlowFixMe
         text-decoration: none;
       }
     `}</style>
@@ -71,6 +67,6 @@ export const Note = ({ id, children }: NoteProps) => (
 )
 
 Note.defaultProps = {
-  id: '',
-  children: []
+  id        : '',
+  children  : [],
 }

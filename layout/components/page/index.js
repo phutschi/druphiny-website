@@ -7,7 +7,7 @@ type Props = {
   children?: React.Node
 }
 
-const Page = ({ children }: Props) => (
+const Page = ( { children }: Props ) => (
   <div className="app">
     <div className="logo">
       <Link prefetch href="/"><a>druphiny.co</a></Link>
@@ -29,7 +29,7 @@ const Page = ({ children }: Props) => (
       }
       a {
         text-decoration: none;
-        color: #b3c100;
+        color: #F62A00;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         text-decoration: none;
         display: inline-block;
@@ -37,7 +37,7 @@ const Page = ({ children }: Props) => (
       }
       a:hover {
         color: #fff;
-        background: #b3c100;
+        background: #F62A00;
         text-decoration: none; 
       }
       @media (max-width: 500px) {
@@ -52,8 +52,6 @@ const Page = ({ children }: Props) => (
   </div>
 )
 
-Page.defaultProps = {
-  children: []
-}
+Page.defaultProps = { children : [] }
 
 export default Page

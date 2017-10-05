@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const Main = ({ children }: Props) => (
+const Main = ( { children }: Props ) => (
   <div className="main">
     { children }
     <style jsx>{`
@@ -26,8 +26,6 @@ const Main = ({ children }: Props) => (
   </div>
 )
 
-Main.defaultProps = {
-  children: []
-}
+Main.defaultProps = { children : [] }
 
 export default Main

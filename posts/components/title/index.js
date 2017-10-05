@@ -3,10 +3,10 @@
 import * as React from 'react'
 
 type Props = {
-  children?: React.Node
+  children? : React.Node
 }
 
-const Title = ({ children }: Props) => (
+const Title = ( { children }: Props ) => (
   <h1>
     <a href="#">{ children }</a>
     <style jsx>{`
@@ -30,8 +30,6 @@ const Title = ({ children }: Props) => (
   </h1>
 )
 
-Title.defaultProps = {
-  children: []
-}
+Title.defaultProps = { children : [] }
 
 export default Title

@@ -6,7 +6,7 @@ type Props = {
   children?: React.Node
 }
 
-const P = ({ children }: Props) => (
+const P = ( { children }: Props ) => (
   <p>
     { children }
     <style jsx>{`
@@ -19,8 +19,6 @@ const P = ({ children }: Props) => (
   </p>
 )
 
-P.defaultProps = {
-  children: [],
-}
+P.defaultProps = { children : [] }
 
 export default P

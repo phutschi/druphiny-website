@@ -4,13 +4,13 @@ import * as React from 'react'
 import NextHead from 'next/head'
 
 type Props = {
-  title?: string,
-  description?: string,
-  url?: string,
-  ogImage?: string,
+  title?        : string,
+  description?  : string,
+  url?          : string,
+  ogImage?      : string,
 }
 
-const Head = (props: Props) => (
+const Head = ( props: Props ) => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title}</title>
@@ -37,10 +37,10 @@ const Head = (props: Props) => (
 )
 
 Head.defaultProps = {
-  title: '',
-  description: '',
-  url: '',
-  ogImage: '',
+  title       : '',
+  description : '',
+  url         : '',
+  ogImage     : '',
 }
 
 export default Head

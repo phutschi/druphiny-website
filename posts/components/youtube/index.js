@@ -7,9 +7,9 @@ type Props = {
   opts: any
 }
 
-const Youtube = (props: Props) => (
+const Youtube = ( props: Props ) => (
   <div>
-    <YouTube {...withDefault(props)} />
+    <YouTube {...withDefault( props )} />
     <style jsx>{`
       div {
         margin: 15px 0;
@@ -18,12 +18,9 @@ const Youtube = (props: Props) => (
   </div>
 )
 
-const withDefault = (props) => (
-  Object.assign({}, props, {
-    opts: Object.assign({}, props.opts || {}, {
-      width: '100%'
-    })
-  })
+const withDefault = ( props ) => (
+  Object.assign( {}, props, {
+    opts : Object.assign(  {}, props.opts || {}, { width : '100%' } ) } )
 )
 
 export default Youtube
