@@ -31,6 +31,7 @@
       "no-unused-vars": 1,
       "no-trailing-spaces": [1, { "skipBlankLines": true }],
       "no-unreachable": 1,
+      "react/jsx-curly-spacing": 2,
       "react/jsx-uses-react": 1,
       "react/jsx-uses-vars": 1,
       "react/jsx-filename-extension": 0,
@@ -41,6 +42,8 @@
       "import/default": 1,
       "import/export": 1,
       "import/no-extraneous-dependencies": 0,
-      "import/extensions": 0
+      "import/extensions": 0,
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
     }
   }
