@@ -1,9 +1,10 @@
-/* global React */
+// @flow
 
-import { Code, P } from '../posts/components'
+import * as React from 'react'
+import Head from '../layout/components/head'
 
 export default () => (
-  <Code>
-    <P>Hello World!</P>
-  </Code>
+  <Head
+    title="Druffwienie"
+  />
 )

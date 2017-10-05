@@ -1,6 +1,12 @@
-/* global React */
+// @flow
 
-export default ({ children }) => (
+import * as React from 'react'
+
+type Props = {
+  children?: React.Node
+}
+
+const P = ({ children }: Props) => (
   <p>
     { children }
     <style jsx>{`
@@ -12,3 +18,9 @@ export default ({ children }) => (
     `}</style>
   </p>
 )
+
+P.defaultProps = {
+  children: [],
+}
+
+export default P

@@ -1,8 +1,13 @@
-/* global React */
+// @flow
 
+import * as React from 'react'
 import P from '../paragraph'
 
-export const FootNotes = ({ children }) => (
+type FootNotesProps = {
+  children?: React.Node
+}
+
+export const FootNotes = ({ children }: FootNotesProps) => (
   <div>
     { children }
     <style jsx>{`
@@ -19,7 +24,15 @@ export const FootNotes = ({ children }) => (
   </div>
 )
 
-export const Ref = ({ id }) => (
+FootNotes.defaultProps = {
+  children: []
+}
+
+type RefProps = {
+  id?: string
+}
+
+export const Ref = ({ id }: RefProps) => (
   <a href={`#f${id}`} id={`s${id}`}>
     [{ id }]
     <style jsx>{`
@@ -33,7 +46,16 @@ export const Ref = ({ id }) => (
   </a>
 )
 
-export const Note = ({ id, children }) => (
+Ref.defaultProps = {
+  id: ''
+}
+
+type NoteProps = {
+  id?: string,
+  children?: React.Node
+}
+
+export const Note = ({ id, children }: NoteProps) => (
   <P>
     { id }.
     {' '}
@@ -47,3 +69,8 @@ export const Note = ({ id, children }) => (
     `}</style>
   </P>
 )
+
+Note.defaultProps = {
+  id: '',
+  children: []
+}

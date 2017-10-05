@@ -1,8 +1,10 @@
 [ignore]
 .*/__tests__/.*
 .*/node_modules/.*
+.*/node_modules/react/.*
 
 [include]
+.*/posts/.*
 
 [libs]
 

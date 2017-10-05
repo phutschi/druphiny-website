@@ -1,8 +1,13 @@
 import { List, ListItem } from './bullets-list'
-import Code from './code'
-import Figure, { Image, Video } from './figure'
-import P from './paragraph'
 import { FootNotes, Ref, Note } from './footnote'
+import Figure from './figure'
+import Image from './image'
+import Video from './video'
+import { H2, H3, H4 } from './heading'
+import Code from './code'
+import P from './paragraph'
+import HR from './hr'
+import Meta from './meta'
 
 export {
   List,
@@ -14,5 +19,10 @@ export {
   P,
   FootNotes,
   Ref,
-  Note
+  Note,
+  H2,
+  H3,
+  H4,
+  HR,
+  Meta
 }

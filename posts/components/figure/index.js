@@ -1,6 +1,15 @@
-/* global React */
+// @flow
 
-export default ({ desc, href, children, wide  }) => (
+import * as React from 'react'
+
+export type FigureProps = {
+  desc?: string,
+  href: string,
+  children?: React.Node,
+  wide?: boolean
+}
+
+const Figure = ({ desc, href, children, wide }: FigureProps) => (
   <div className={wide && 'wide'}>
     { href
         ? <a href={href} target="_blank">{ children }</a>
@@ -39,35 +48,10 @@ export default ({ desc, href, children, wide  }) => (
   </div>
 )
 
-const Image = ({ width, src, alt }) => (
-  <div>
-    <img width={width} src={src} alt={alt} />
-    <style jsx>{`
-      img {
-        max-width: 100%;
-        margin: 15px 0;
-      }
-    `}</style>
-  </div>
-)
+Figure.defaultProps = {
+  desc: 'Figure',
+  children: <span>default child</span>,
+  wide: false
+}
 
-const Video = ({ videoSrc, trackSrc, trackSrcLang }) => (
-  <div>
-    <video autoPlay loop src={videoSrc}>
-      <track
-        kind='captions'
-        src={trackSrc}
-        srcLang={trackSrcLang}
-        default
-      />
-      <style jsx>{`
-        video {
-          max-width: 100%;
-          margin: 15px 0;
-        }
-      `}</style>
-    </video>
-  </div>
-)
-
-export { Image, Video }
+export default Figure

@@ -1,6 +1,12 @@
-/* global React */
+// @flow
 
-const List = ({ children }) => (
+import * as React from 'react'
+
+type Props = {
+  children: React.Node
+}
+
+const List = ({ children }: Props) => (
   <ul>
     { children }
     <style jsx>{`
@@ -13,7 +19,7 @@ const List = ({ children }) => (
   </ul>
 )
 
-const ListItem = ({ children }) => (
+const ListItem = ({ children }: Props) => (
   <li>
     { children }
     <style jsx>{`
