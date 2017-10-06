@@ -11,9 +11,10 @@ const Subtitle = ( { children }: Props ) => (
     { children }
     <style jsx>{`
       .subtitle {
-        font-size: 11px;
+        font-size: 12px;
+        text-align: center;
         text-transform: lowercase;
-        // font-family: Operator Mono;
+        font-family: Operator Mono;
         font-style: italic;
         letter-spacing: 1px;
       }

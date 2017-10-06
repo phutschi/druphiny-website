@@ -12,10 +12,10 @@ const Title = ( { children }: Props ) => (
     <style jsx>{`
       .title {
         display: block;
-        margin-bottom: 20px;
+        padding: 20px 0;
         text-align: center;
-        font-weight: normal;
-        font-size: 18px;
+        font-weight: 300;
+        font-size: 14px;
       }
     `}</style>
   </div>
