@@ -3,8 +3,8 @@
 import * as React from 'react'
 
 type Props = {
-  id?: string,
-  level?: number,
+  id: string,
+  level: number,
   fontSize?: number,
   children?: React.Node
 }
@@ -42,8 +42,6 @@ const Heading = ( { id, level, fontSize, children }: Props ) => (
 )
 
 Heading.defaultProps = {
-  id        : '',
-  level     : 1,
   fontSize  : 18,
   children  : [],
 }

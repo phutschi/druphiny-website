@@ -27,7 +27,7 @@ export const FootNotes = ( { children }: FootNotesProps ) => (
 FootNotes.defaultProps = { children : [] }
 
 type RefProps = {
-  id? : string
+  id : string
 }
 
 export const Ref = ( { id }: RefProps ) => (
@@ -44,10 +44,8 @@ export const Ref = ( { id }: RefProps ) => (
   </a>
 )
 
-Ref.defaultProps = { id : '' }
-
 type NoteProps = {
-  id?: string,
+  id: string,
   children?: React.Node
 }
 
@@ -66,7 +64,4 @@ export const Note = ( { id, children }: NoteProps ) => (
   </P>
 )
 
-Note.defaultProps = {
-  id        : '',
-  children  : [],
-}
+Note.defaultProps = { children  : [] }
