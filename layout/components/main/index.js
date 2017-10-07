@@ -64,7 +64,15 @@ const Main = ( { children }: Props ) => (
 
       .return {
         font-size: 13px;
-        padding: 25px 50px;
+        top: 25px;
+        left: 50px;
+        position: absolute;
+      }
+
+      @media only screen and (max-width: 640px) {
+        .return {
+          left: 25px;
+        }
       }
 
       .return a {

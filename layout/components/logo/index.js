@@ -19,6 +19,13 @@ const Logo = ( { height }: Props ) => (
         width: auto;
         height: ${height}px;
       }
+
+      @media only screen and (max-width: 40em) {
+        .logo svg {
+          width: 48px;
+          height: 48px;
+        }
+      }
     `}</style>
   </div>
 )

@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "comma-number": "^2.0.0",
+    "detect-browser": "^2.0.0",
     "next": "^4.0.0-beta.2",
+    "pubnub": "^4.15.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-youtube": "^7.5.0"

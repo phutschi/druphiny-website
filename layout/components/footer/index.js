@@ -13,7 +13,9 @@ const Footer = () => (
       <Link href="/articles"><a>AKTUELLES</a></Link>
       <Link href="/merch"><a>MERCH</a></Link>
       <Link href="/events"><a>EVENTS</a></Link>
-      <Link href="/monitor"><a>MONITOR</a></Link>
+      <div className="monitor">
+        <Link prefetch href="/monitor"><a>MONITOR</a></Link>
+      </div>
       {/* <Link href="/contact"><a>KONTAKT</a></Link> */}
     </div>
     <style jsx>{`
@@ -33,8 +35,26 @@ const Footer = () => (
         transition: all .2s;
       }
 
+      .footer a:last-child {
+        margin-right: 0;
+      }
+
       .footer a:hover {
         color: white;
+      }
+
+      .monitor {
+        display: inline-block;
+      }
+
+      .monitor:after {
+        content: '';
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #50e3c2;
+        margin: 0 10px 1px;
       }
 
       .left {
