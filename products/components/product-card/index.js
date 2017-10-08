@@ -117,4 +117,6 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
   </div>
 )
 
+ProductCard.defaultProps = { description : 'Nice Product Dude' }
+
 export default ProductCard

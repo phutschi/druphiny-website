@@ -2,7 +2,11 @@
 
 import * as React from 'react'
 
-const ProductRow = ( { children } ) => (
+type Props = {
+  children? : React.Node
+}
+
+const ProductRow = ( { children }: Props ) => (
   <div className="product-row">
     { children }
     <style jsx>{`
@@ -20,5 +24,7 @@ const ProductRow = ( { children } ) => (
   `}</style>
   </div>
 )
+
+ProductRow.defaultProps = { children : [] }
 
 export default ProductRow

@@ -6,9 +6,7 @@ import FontAwesome from 'react-fontawesome'
 const HeaderCart = () => (
   <div className="header-cart">
     <ul>
-      <FontAwesome
-        name="shopping-cart"
-      />
+      <FontAwesome name="shopping-cart" />
       <span className="counter" />
     </ul>
     <style jsx>{`
