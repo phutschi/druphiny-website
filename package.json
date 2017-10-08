@@ -18,6 +18,7 @@
     "pubnub": "^4.15.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-fontawesome": "^1.6.1",
     "react-youtube": "^7.5.0"
   },
   "devDependencies": {

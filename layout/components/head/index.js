@@ -22,6 +22,7 @@ const Head = ( props: Props ) => (
     <link rel="manifest" href="/static/manifest.json" />
     <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="/static/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta name="msapplication-config" content="/static/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta property="og:url" content={props.url} />
