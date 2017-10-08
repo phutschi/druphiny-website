@@ -15,7 +15,7 @@ const Monitor = () => (
       <HorizontalList title="GREENHOUSE 1">
         <HorizontalListItem
           metric="Humidity"
-          value="12%"
+          value="70%"
         />
         <HorizontalListItem
           metric="Temperature"
