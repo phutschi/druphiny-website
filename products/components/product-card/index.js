@@ -31,7 +31,7 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
       border-radius: 3px;
       padding: 2em;
       margin: 1em;
-      overflow: hidden;
+      overflow: scroll;
       position: relative;
       -webkit-box-flex: 1;
           -ms-flex: auto;

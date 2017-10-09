@@ -13,7 +13,7 @@ const ProductRow = ( { children }: Props ) => (
     .product-row {
       width: 100%;
       -webkit-box-pack: start;
-        -ms-flex-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
       display: -webkit-box;
       display: -ms-flexbox;
