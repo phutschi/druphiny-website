@@ -23,7 +23,7 @@ const Monitor = () => (
         />
         <HorizontalListItem
           metric="Light"
-          value="1420lm"
+          value="1420lx"
         />
         <HorizontalListItem
           metric="Power"

@@ -21,21 +21,21 @@ const Merch = () => (
           price={94.95}
           name="Nice Shirt"
           description="Really Nice Shirt"
-          details="XL"
+          details="Makes you look super sexy"
         />
         <ProductCard
-          src="https://i.pinimg.com/originals/27/41/a4/2741a4de6ff6bb6e956a1a6552a2f2dc.png"
-          price={94.95}
-          name="Nice Shirt"
-          description="Really Nice Shirt"
-          details="XL"
+          src="http://imagespng.com/Data/DownloadLogo/cup_PNG1996%20(1).png"
+          price={37.95}
+          name="Coffee Mug"
+          description="Really Nice Mug"
+          details="Keeps ya coffee super warm"
         />
         <ProductCard
-          src="https://i.pinimg.com/originals/27/41/a4/2741a4de6ff6bb6e956a1a6552a2f2dc.png"
-          price={94.95}
-          name="Nice Shirt"
-          description="Really Nice Shirt"
-          details="XL"
+          src="http://www.darkknightarmoury.com/images/Product/large/RC-68371.png"
+          price={40.95}
+          name="Yoda Sweet Bowl"
+          description="Really Nice Sweet Bowl"
+          details="Store the sweets until they go in your tummy"
         />
       </ProductRow>
     </Container>

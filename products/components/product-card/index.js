@@ -25,7 +25,7 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
     </div>
     <style jsx>{`
     .product {
-      border: 1px solid #CCC;
+      border: 1px solid #666;
       width: 15em;
       height: auto;
       border-radius: 3px;
@@ -35,7 +35,7 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
       position: relative;
       -webkit-box-flex: 1;
           -ms-flex: auto;
-              flex: auto;
+              flex: auto;              
     }
     .product img {
       max-width: 100%;
@@ -53,6 +53,7 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
           flex-flow: column wrap;
     }
     .product-inner p {
+      text-align: center;
       color: rgba(255, 255, 255, 0.9);
     }
     .product-inner button {
