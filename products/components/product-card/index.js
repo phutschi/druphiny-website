@@ -25,10 +25,8 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
     </div>
     <style jsx>{`
     .product {
-      border: 1px solid #666;
       width: 15em;
       height: auto;
-      border-radius: 3px;
       padding: 2em;
       margin: 1em;
       overflow: scroll;
@@ -43,6 +41,7 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
       text-align: center;
     }
     .product-inner {
+      padding-bottom: 30px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -60,9 +59,11 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
       border: 1px solid rgba(255, 255, 255, 0.5);
       color: #FFF;
       border-radius: 3px;
-      padding: 1em 3em;
+      padding: 1em 3em 1em 4.5em;
       margin: 1em 0 0 0;
       background: none;
+      bottom: 5px;
+      position: absolute;
       cursor: pointer;
       -webkit-transition: background ease-in .25s;
       transition: background ease-in .25s;
@@ -72,12 +73,12 @@ const ProductCard = ( { src, description, name, details, price }: Props ) => (
       color: #2B2D42;
     }
     .product-inner button:before {
-      font-family: FontAwesome;
-      content: '\f07A';
+      font-family: Fontawesome;
+      font-size: 10px;
+      content: '\f09d';
       color: #FFF;
       position: absolute;
-      font-size: 1.5em;
-      margin: 0 -1.5em;
+      margin: 1px -2em;
     }
     .product-inner button:hover:before {
       color: #2B2D42;
