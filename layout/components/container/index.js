@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 type Props = {
-  width?    : string,
+  width     : string,
   children? : React.Node
 }
 

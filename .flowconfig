@@ -4,7 +4,13 @@
 .*/node_modules/react/.*
 
 [include]
+.*/events/.*
+.*/layout/.*
+.*/page/.*
+.*/pages/.*
 .*/posts/.*
+.*/products/.*
+.*/stats/.*
 
 [libs]
 
