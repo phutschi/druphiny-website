@@ -4,11 +4,12 @@ import * as React from 'react'
 import Link from 'next/link'
 
 type Props = {
-  children?: React.Node
+  white?    : boolean,
+  children? : React.Node
 }
 
-const Main = ( { children }: Props ) => (
-  <div className="main">
+const Main = ( { children, white }: Props ) => (
+  <div className={'main ' + ( white ? "white" : null )}>
     <div className="return">
       <Link prefetch href="/"><a>druphiny.co</a></Link>
     </div>
@@ -61,6 +62,19 @@ const Main = ( { children }: Props ) => (
                   animation: fadein 2s;
       }
 
+      .main.white {
+        color: black;
+        background: white;
+      }
+
+      .main.white a:after {
+        background: black;
+      }
+
+      .main.white .return a:hover {
+        color: black;
+      }
+
       .return {
         font-size: 13px;
         top: 25px;
@@ -102,6 +116,9 @@ const Main = ( { children }: Props ) => (
   </div>
 )
 
-Main.defaultProps = { children : [] }
+Main.defaultProps = {
+  white    : false,
+  children : [],
+}
 
 export default Main
