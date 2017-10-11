@@ -76,6 +76,7 @@ const Main = ( { children, white }: Props ) => (
       }
 
       .return {
+        z-index: 2;
         font-size: 13px;
         top: 25px;
         left: 50px;

@@ -10,11 +10,9 @@ import Container from '../layout/components/container'
 import HorizontalList, { HorizontalListItem } from '../stats/components/horizontal-list'
 
 const params = {
-  particles: {
-    number: {
-      value: 20
-    }
-  }
+  particles : {
+    number : {value : 20,},
+  },
 }
 
 const Monitor = () => (
@@ -23,27 +21,25 @@ const Monitor = () => (
     <Container width="100%">
       <Particles
         style={{
-          top: 0,
-          left: 0,
-          position: 'absolute',
+          top      : 0,
+          left     : 0,
+          position : 'absolute',
         }}
         params={{
-          particles: {
-            shape: {
-              type: 'star'
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 7500,
+          particles : {
+            shape  : { type : 'star' },
+            number : {
+              density : {
+                enable     : true,
+                value_area : 7500,
               },
-              value: 200
+              value : 200,
             },
-            line_linked: {
-              width: 0.2,
-              opacity: 1
-            }
-          }
+            line_linked : {
+              width   : 0.2,
+              opacity : 1,
+            },
+          },
         }}
       />
       <HorizontalList region="Sensor 1">
