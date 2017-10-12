@@ -1,15 +1,15 @@
 // @flow
 
-import * as React from 'react'
-import P from '../paragraph'
+import * as React from 'react';
+import P from '../paragraph';
 
 type FootNotesProps = {
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 export const FootNotes = ( { children }: FootNotesProps ) => (
   <div>
-    { children }
+    {children}
     <style jsx>{`
       div::before {
         width: 200px;
@@ -22,17 +22,17 @@ export const FootNotes = ( { children }: FootNotesProps ) => (
       }
     `}</style>
   </div>
-)
+);
 
-FootNotes.defaultProps = { children : [] }
+FootNotes.defaultProps = { children : [] };
 
 type RefProps = {
-  id : string
-}
+  id: string,
+};
 
 export const Ref = ( { id }: RefProps ) => (
   <a href={`#f${id}`} id={`s${id}`}>
-    [{ id }]
+    [{id}]
     <style jsx>{`
       a {
         top: -5px;
@@ -42,26 +42,27 @@ export const Ref = ( { id }: RefProps ) => (
       }
     `}</style>
   </a>
-)
+);
 
 type NoteProps = {
   id: string,
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 export const Note = ( { id, children }: NoteProps ) => (
   <P>
-    { id }.
-    {' '}
-    <a href={`#s${id}`} id={`f${id}`}>^</a>
-    {' '}
-    { children }
+    {id}.{' '}
+    <a href={`#s${id}`} id={`f${id}`}>
+      ^
+    </a>{' '}
+    {children}
     <style jsx>{`
-      a { // $FlowFixMe
+      a {
+        // $FlowFixMe
         text-decoration: none;
       }
     `}</style>
   </P>
-)
+);
 
-Note.defaultProps = { children  : [] }
+Note.defaultProps = { children : [] };

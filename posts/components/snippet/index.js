@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 const Snippet = ( { children }: Props ) => (
   <pre>
-    <code>{ children }</code>
+    <code>{children}</code>
     <style jsx>{`
       pre {
         line-height: 20px;
@@ -21,8 +21,8 @@ const Snippet = ( { children }: Props ) => (
       }
     `}</style>
   </pre>
-)
+);
 
-Snippet.defaultProps = { children : [] }
+Snippet.defaultProps = { children : [] };
 
-export default Snippet
+export default Snippet;

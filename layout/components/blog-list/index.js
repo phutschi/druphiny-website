@@ -1,12 +1,11 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  width     : string,
-  children? : React.Node
-}
+  children?: React.Node,
+};
 
-const BlogList = ( { children }: Props ) => (
+const BlogList = ( { children }: Props ) => <div>{children}</div>;
 
-)
+BlogList.defaultProps = { children : [] };

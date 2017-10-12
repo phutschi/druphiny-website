@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children  : React.Node
-}
+  children: React.Node,
+};
 
 const List = ( { children }: Props ) => (
   <ul>
-    { children }
+    {children}
     <style jsx>{`
       ul {
         margin: 0 0 20px 0;
@@ -17,11 +17,11 @@ const List = ( { children }: Props ) => (
       }
     `}</style>
   </ul>
-)
+);
 
 const ListItem = ( { children }: Props ) => (
   <li>
-    { children }
+    {children}
     <style jsx>{`
       li {
         margin-bottom: 5px;
@@ -30,12 +30,12 @@ const ListItem = ( { children }: Props ) => (
       }
       li:before {
         content: '-';
-        color: #ABABAB;
+        color: #ababab;
         position: absolute;
         margin-left: -20px;
       }
     `}</style>
   </li>
-)
+);
 
-export { List, ListItem }
+export { List, ListItem };

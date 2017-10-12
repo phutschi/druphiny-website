@@ -1,19 +1,21 @@
 // @flow
 
-import * as React from 'react'
-import Link from 'next/link'
+import * as React from 'react';
+import Link from 'next/link';
 
 type Props = {
-  white?    : boolean,
-  children? : React.Node
-}
+  white?: boolean,
+  children?: React.Node,
+};
 
 const Main = ( { children, white }: Props ) => (
-  <div className={'main ' + ( white ? "white" : null )}>
+  <div className={`main ${white ? 'white' : null}`}>
     <div className="return">
-      <Link prefetch href="/"><a>druphiny.co</a></Link>
+      <Link prefetch href="/">
+        <a>druphiny.co</a>
+      </Link>
     </div>
-    { children }
+    {children}
     <style jsx global>{`
       html,
       body {
@@ -29,7 +31,7 @@ const Main = ( { children, white }: Props ) => (
       }
 
       a:after {
-        content: "";
+        content: '';
         height: 1px;
         background: white;
         position: absolute;
@@ -39,7 +41,7 @@ const Main = ( { children, white }: Props ) => (
         right: 0;
         opacity: 0;
         transform: scale(0, 1);
-        transition: all .2s;
+        transition: all 0.2s;
       }
 
       a:hover:after {
@@ -54,12 +56,14 @@ const Main = ( { children, white }: Props ) => (
         right: 0;
         left: 0;
         color: white;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-          -webkit-animation: fadein 2s;
-             -moz-animation: fadein 2s;
-              -ms-animation: fadein 2s;
-               -o-animation: fadein 2s;
-                  animation: fadein 2s;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+        -o-animation: fadein 2s;
+        animation: fadein 2s;
       }
 
       .main.white {
@@ -92,34 +96,46 @@ const Main = ( { children, white }: Props ) => (
       .return a {
         color: #999;
         margin: 0;
-        transition: all .2s;
+        transition: all 0.2s;
       }
 
       .return a:hover {
-        color: white
+        color: white;
       }
 
       @keyframes fadein {
-        from  { opacity: 0; }
-        to    { opacity: 1; }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       @-moz-keyframes fadein {
-        from  { opacity: 0; }
-        to    { opacity: 1; }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       @-webkit-keyframes fadein {
-        from  { opacity: 0; }
-        to    { opacity: 1; }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     `}</style>
   </div>
-)
+);
 
 Main.defaultProps = {
   white    : false,
   children : [],
-}
+};
 
-export default Main
+export default Main;

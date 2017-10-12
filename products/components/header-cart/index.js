@@ -1,7 +1,7 @@
 // @flow
 
-import * as React from 'react'
-import Fontawesome from '../../../layout/components/fontawesome'
+import * as React from 'react';
+import Fontawesome from '../../../layout/components/fontawesome';
 
 const HeaderCart = () => (
   <div className="header-cart">
@@ -16,23 +16,23 @@ const HeaderCart = () => (
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        flex-flow: row wrap;
       }
       .header-cart ul {
         padding: 1.2em 0 0.5em;
       }
       .header-cart span {
         padding: 0 0 0 0.5em;
-        color: #2B2D42;
+        color: #2b2d42;
       }
       .header-cart span:nth-of-type(2) {
         cursor: pointer;
       }
     `}</style>
   </div>
-)
+);
 
-export default HeaderCart
+export default HeaderCart;

@@ -1,20 +1,31 @@
 // @flow
 
-import * as React from 'react'
-import Link from 'next/link'
+import * as React from 'react';
+import Link from 'next/link';
 
 const Footer = () => (
   <div className="footer">
     <div className="left">
-      © 2017 — <Link href="mailto:hi@druphiny.co"><a>hi@druphiny.co</a></Link>
+      © 2017 —{' '}
+      <Link href="mailto:hi@druphiny.co">
+        <a>hi@druphiny.co</a>
+      </Link>
     </div>
     <div className="right">
       {/* <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ofchsupport">TWITTER</a> */}
-      <Link href="/articles"><a>AKTUELLES</a></Link>
-      <Link href="/merch"><a>MERCH</a></Link>
-      <Link href="/events"><a>EVENTS</a></Link>
+      <Link href="/articles">
+        <a>AKTUELLES</a>
+      </Link>
+      <Link href="/merch">
+        <a>MERCH</a>
+      </Link>
+      <Link href="/events">
+        <a>EVENTS</a>
+      </Link>
       <div className="monitor">
-        <Link prefetch href="/monitor"><a>MONITOR</a></Link>
+        <Link prefetch href="/monitor">
+          <a>MONITOR</a>
+        </Link>
       </div>
       {/* <Link href="/contact"><a>KONTAKT</a></Link> */}
     </div>
@@ -32,7 +43,7 @@ const Footer = () => (
       .footer a {
         color: #999;
         margin: 0;
-        transition: all .2s;
+        transition: all 0.2s;
       }
 
       .footer a:last-child {
@@ -87,6 +98,6 @@ const Footer = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

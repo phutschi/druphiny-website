@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 const Title = ( { children }: Props ) => (
   <div className="title">
-    { children }
+    {children}
     <style jsx>{`
       .title {
         display: block;
@@ -19,8 +19,8 @@ const Title = ( { children }: Props ) => (
       }
     `}</style>
   </div>
-)
+);
 
-Title.defaultProps = { children : [] }
+Title.defaultProps = { children : [] };
 
-export default Title
+export default Title;

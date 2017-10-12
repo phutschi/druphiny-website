@@ -1,6 +1,6 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 const HR = () => (
   <div>
@@ -19,6 +19,6 @@ const HR = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default HR
+export default HR;

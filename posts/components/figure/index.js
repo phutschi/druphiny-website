@@ -1,24 +1,24 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 export type FigureProps = {
-  desc?     : string,
-  href      : string,
-  children? : React.Node,
-  wide?     : boolean
-}
+  desc?: string,
+  href: string,
+  children?: React.Node,
+  wide?: boolean,
+};
 
 const Figure = ( { desc, href, children, wide }: FigureProps ) => (
   <div className={wide && 'wide'}>
-    { href
-      ? <a href={href} target="_blank">{ children }</a>
-      : children }
-    {
-      desc && <p>
-        { desc }
-      </p>
+    {href ? (
+      <a href={href} target="_blank">
+        {children}
+      </a>
+    ) :
+      children
     }
+    {desc && <p>{desc}</p>}
     <style jsx>{`
       div {
         text-align: center;
@@ -32,7 +32,7 @@ const Figure = ( { desc, href, children, wide }: FigureProps ) => (
         display: block;
       }
       .wide {
-        background: #F2F2F2;
+        background: #f2f2f2;
         position: relative;
       }
       .wide::before {
@@ -41,17 +41,17 @@ const Figure = ( { desc, href, children, wide }: FigureProps ) => (
         left: -1000px;
         height: 100%;
         position: absolute;
-        background: #F2F2F2;
+        background: #f2f2f2;
         z-index: -1;
       }
     `}</style>
   </div>
-)
+);
 
 Figure.defaultProps = {
-  desc      : 'Figure',
-  children  : <span>default child</span>,
-  wide      : false,
-}
+  desc     : 'Figure',
+  children : <span>default child</span>,
+  wide     : false,
+};
 
-export default Figure
+export default Figure;

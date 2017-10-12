@@ -1,11 +1,11 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type HorizontalListProps = {
-  region : string,
+  region: string,
   children?: React.Node,
-}
+};
 
 const HorizontalList = ( { region, children }: HorizontalListProps ) => (
   <div className="stats">
@@ -14,9 +14,7 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
         <div className="region-label">REGION</div>
         <div className="region-value">{region.toUpperCase()}</div>
       </div>
-      <div className="metrics">
-        { children }
-      </div>
+      <div className="metrics">{children}</div>
     </div>
     <style jsx>{`
       .stats {
@@ -40,7 +38,7 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
         padding-bottom: 24px;
         margin-bottom: 24px;
       }
-  
+
       .region {
         border-right: 1px solid #333;
         margin-right: 30px;
@@ -55,11 +53,11 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
       }
 
       .region-label {
-        color: #50E3C2;
+        color: #50e3c2;
         font-size: 12px;
         margin-bottom: 5px;
       }
-  
+
       .region-value {
         font-size: 24px;
       }
@@ -84,7 +82,7 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
         .list {
           display: block;
         }
-        
+
         .region {
           border-bottom: 1px solid #333;
           border-right: none;
@@ -93,7 +91,7 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
           padding-top: 0;
           width: 100%;
         }
-        
+
         .metrics {
           display: inline-block;
           padding-top: 25px;
@@ -102,14 +100,14 @@ const HorizontalList = ( { region, children }: HorizontalListProps ) => (
       }
     `}</style>
   </div>
-)
+);
 
-HorizontalList.defaultProps = { children : [] }
+HorizontalList.defaultProps = { children : [] };
 
 type HorizontalListItemProps = {
-  metric  : string,
-  value   : string,
-}
+  metric: string,
+  value: string,
+};
 
 const HorizontalListItem = ( { metric, value }: HorizontalListItemProps ) => (
   <div className="metric">
@@ -123,7 +121,7 @@ const HorizontalListItem = ( { metric, value }: HorizontalListItemProps ) => (
       }
 
       .label {
-        color: #50E3C2;
+        color: #50e3c2;
         font-size: 12px;
         margin-bottom: 5px;
       }
@@ -138,9 +136,9 @@ const HorizontalListItem = ( { metric, value }: HorizontalListItemProps ) => (
           width: 33%;
         }
       }
-  `}</style>
+    `}</style>
   </div>
-)
+);
 
-export default HorizontalList
-export { HorizontalListItem }
+export default HorizontalList;
+export { HorizontalListItem };

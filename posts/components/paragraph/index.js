@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 const P = ( { children }: Props ) => (
   <p>
-    { children }
+    {children}
     <style jsx>{`
       p {
         font-size: 14px;
@@ -17,8 +17,8 @@ const P = ( { children }: Props ) => (
       }
     `}</style>
   </p>
-)
+);
 
-P.defaultProps = { children : [] }
+P.defaultProps = { children : [] };
 
-export default P
+export default P;

@@ -1,16 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 const Tldr = ( { children }: Props ) => (
   <div className="wrap">
-    <b>tl;DR:</b>
-    {' '}
-    <div className="content">{ children }</div>
+    <b>tl;DR:</b> <div className="content">{children}</div>
     <style jsx>{`
       .wrap {
         margin-bottom: 25px;
@@ -25,9 +23,8 @@ const Tldr = ( { children }: Props ) => (
       }
     `}</style>
   </div>
-)
+);
 
+Tldr.defaultProps = { children : [] };
 
-Tldr.defaultProps = { children : [] }
-
-export default Tldr
+export default Tldr;

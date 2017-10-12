@@ -1,25 +1,23 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  by        : string,
-  children? : React.Node
-}
+  by: string,
+  children?: React.Node,
+};
 
 const Quote = ( { by, children }: Props ) => (
   <blockquote>
     <p>
-      { children }
+      {children}
       <br />
-      {
-        by && `– ${by}`
-      }
+      {by && `– ${by}`}
     </p>
     <style jsx>{`
       blockquote {
         margin: 30px 0;
-        color: #9B9B9B;
+        color: #9b9b9b;
         font-style: oblique;
         font-size: 12px;
       }
@@ -29,11 +27,11 @@ const Quote = ( { by, children }: Props ) => (
       }
     `}</style>
   </blockquote>
-)
+);
 
 Quote.defaultProps = {
-  by        : 'Druphiny',
-  children  : [],
-}
+  by       : 'Druphiny',
+  children : [],
+};
 
-export default Quote
+export default Quote;

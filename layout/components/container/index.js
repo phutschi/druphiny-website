@@ -1,15 +1,15 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  width     : string,
-  children? : React.Node
-}
+  width: string,
+  children?: React.Node,
+};
 
 const Container = ( { children, width }: Props ) => (
   <div className="container">
-    { children }
+    {children}
     <style jsx>{`
       .container {
         width: 80%;
@@ -18,11 +18,11 @@ const Container = ( { children, width }: Props ) => (
       }
     `}</style>
   </div>
-)
+);
 
 Container.defaultProps = {
   children : [],
   width    : '900px',
-}
+};
 
-export default Container
+export default Container;

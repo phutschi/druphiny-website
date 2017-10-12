@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children  : React.Node,
-}
+  children: React.Node,
+};
 
 const Code = ( { children }: Props ) => (
   <code>
-    { children }
+    {children}
     <style jsx>{`
       code {
         color: #666;
@@ -16,6 +16,6 @@ const Code = ( { children }: Props ) => (
       }
     `}</style>
   </code>
-)
+);
 
-export default Code
+export default Code;

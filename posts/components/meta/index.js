@@ -1,51 +1,51 @@
 // @flow
 
-import * as React from 'react'
-import format from 'comma-number'
+import * as React from 'react';
+import format from 'comma-number';
 
 type Props = {
-  views : number,
-  date? : string,
+  views: number,
+  date?: string,
 };
 
 type State = {
-  highlight : boolean
-}
+  highlight: boolean,
+};
 
 class Meta extends React.Component<Props, State> {
   constructor( props: Props ) {
-    super( props )
+    super( props );
 
-    this.state = { highlight : false }
+    this.state = { highlight : false };
   }
 
   componentWillReceiveProps( nextProps: Props ) {
     if ( this.props.views !== nextProps.views ) {
-      if ( this.raf ) return
+      if ( this.raf ) return;
       if ( this.state.highlight ) {
         // reset the animation
         this.setState( { highlight : false }, () => {
           this.raf = requestAnimationFrame( () => {
-            this.raf = null
-            this.setState( { highlight : true } )
-          } )
-        } )
+            this.raf = null;
+            this.setState( { highlight : true } );
+          } );
+        } );
       } else {
-        this.setState( { highlight : true } )
+        this.setState( { highlight : true } );
       }
     }
   }
 
   render() {
-    const { date, views } = this.props
-    const { highlight } = this.state
+    const { date, views } = this.props;
+    const { highlight } = this.state;
 
     return (
       <div>
-        { date } – {' '}
+        {date} – {' '}
         {
           <span className={highlight && 'highlight'}>
-            { format( views ) } views
+            {format( views )} views
           </span>
         }
         <style jsx>{`
@@ -70,8 +70,8 @@ class Meta extends React.Component<Props, State> {
           }
         `}</style>
       </div>
-    )
+    );
   }
 }
 
-export default Meta
+export default Meta;

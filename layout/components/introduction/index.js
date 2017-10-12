@@ -1,26 +1,26 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type Props = {
-  children?  : React.Node,
-}
+  children?: React.Node,
+};
 
 const Introduction = ( { children }: Props ) => (
   <div className="introduction">
-    { children }
+    {children}
     <style jsx>{`
       .introduction {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
       }
     `}</style>
   </div>
-)
+);
 
-Introduction.defaultProps = { children : [] }
+Introduction.defaultProps = { children : [] };
 
-export default Introduction
+export default Introduction;

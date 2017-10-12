@@ -1,12 +1,12 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type ImageProps = {
   width?: string,
   src: string,
   alt?: string,
-}
+};
 
 const Image = ( props: ImageProps ) => (
   <div>
@@ -18,11 +18,11 @@ const Image = ( props: ImageProps ) => (
       }
     `}</style>
   </div>
-)
+);
 
 Image.defaultProps = {
   width : '',
   alt   : '',
-}
+};
 
-export default Image
+export default Image;

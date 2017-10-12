@@ -1,11 +1,11 @@
 // @flow
 
-import * as React from 'react'
-import YouTube from 'react-youtube'
+import * as React from 'react';
+import YouTube from 'react-youtube';
 
 type Props = {
-  opts: any
-}
+  opts: any,
+};
 
 const Youtube = ( props: Props ) => (
   <div>
@@ -16,11 +16,9 @@ const Youtube = ( props: Props ) => (
       }
     `}</style>
   </div>
-)
+);
 
-const withDefault = ( props ) => (
-  Object.assign( {}, props, {
-    opts : Object.assign(  {}, props.opts || {}, { width : '100%' } ) } )
-)
+const withDefault = props =>
+  Object.assign( {}, props, { opts : Object.assign( {}, props.opts || {}, { width : '100%' } ) } );
 
-export default Youtube
+export default Youtube;

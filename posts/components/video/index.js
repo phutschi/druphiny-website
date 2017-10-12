@@ -1,12 +1,12 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
 type VideoProps = {
-  videoSrc      : string,
-  trackSrc      : string,
-  trackSrcLang  : string,
-}
+  videoSrc: string,
+  trackSrc: string,
+  trackSrcLang: string,
+};
 
 const Video = ( props: VideoProps ) => (
   <div>
@@ -25,6 +25,6 @@ const Video = ( props: VideoProps ) => (
       `}</style>
     </video>
   </div>
-)
+);
 
-export default Video
+export default Video;
