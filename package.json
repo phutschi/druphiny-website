@@ -14,8 +14,7 @@
   "dependencies": {
     "comma-number": "^2.0.0",
     "detect-browser": "^2.0.0",
-    "next": "^4.0.0-beta.2",
-    "pubnub": "^4.15.1",
+    "next": "^4.0.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fontawesome": "^1.6.1",
@@ -33,6 +32,8 @@
     "flow-bin": "^0.56.0",
     "flow-coverage-report": "^0.3.0",
     "jest": "^21.2.1",
+    "prettier": "^1.7.4",
+    "prettier-eslint": "^8.2.1",
     "react-test-renderer": "^16.0.0"
   }
 }

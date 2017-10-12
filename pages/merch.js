@@ -1,14 +1,14 @@
 // @flow
 
-import * as React from 'react'
+import * as React from 'react';
 
-import Main from '../layout/components/main'
-import Head from '../layout/components/head'
-import Container from '../layout/components/container'
+import Main from '../layout/components/main';
+import Head from '../layout/components/head';
+import Container from '../layout/components/container';
 
-import HeaderCart from '../products/components/header-cart'
-import ProductRow from '../products/components/product-row'
-import ProductCard from '../products/components/product-card'
+import HeaderCart from '../products/components/header-cart';
+import ProductRow from '../products/components/product-row';
+import ProductCard from '../products/components/product-card';
 
 const Merch = () => (
   <Main>
@@ -40,6 +40,6 @@ const Merch = () => (
       </ProductRow>
     </Container>
   </Main>
-)
+);
 
-export default Merch
+export default Merch;
