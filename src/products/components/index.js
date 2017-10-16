@@ -1,15 +1,15 @@
 import CartHeader from './cart-header';
-import ProductCart from './product-cart';
+import ProductCard from './product-card';
 import ProductRow from './product-row';
 
 export default {
   CartHeader,
-  ProductCart,
+  ProductCard,
   ProductRow,
 }
 
 export {
   CartHeader,
-  ProductCart,
+  ProductCard,
   ProductRow,
 }
