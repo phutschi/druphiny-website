@@ -140,5 +140,4 @@ const HorizontalListItem = ( { metric, value }: HorizontalListItemProps ) => (
   </div>
 );
 
-export default HorizontalList;
-export { HorizontalListItem };
+export { HorizontalList, HorizontalListItem };
