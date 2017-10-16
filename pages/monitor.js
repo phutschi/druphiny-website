@@ -2,14 +2,8 @@
 
 import * as React from 'react';
 
-import Main from '../layout/components/main';
-import Head from '../layout/components/head';
-import Container from '../layout/components/container';
-
-import {
-  HorizontalList,
-  HorizontalListItem,
-} from '../stats/components';
+import { Main, Head, Container } from '../layout/components';
+import { HorizontalList, HorizontalListItem } from '../stats/components';
 
 const Monitor = () => (
   <Main>
