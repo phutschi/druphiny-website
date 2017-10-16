@@ -3,9 +3,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-import Title from '../page/components/title';
-import Subtitle from '../page/components/subtitle';
-
+import { Title, Subtitle } from '../page/components';
 import { Main, Head, Introduction, Logo, Footer } from '../layout/components';
 
 const Index = () => {

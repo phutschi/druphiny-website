@@ -6,9 +6,10 @@ import Main from '../layout/components/main';
 import Head from '../layout/components/head';
 import Container from '../layout/components/container';
 
-import HorizontalList, {
+import {
+  HorizontalList,
   HorizontalListItem,
-} from '../stats/components/horizontal-list';
+} from '../stats/components';
 
 const Monitor = () => (
   <Main>
