@@ -3,8 +3,8 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-import { Title, Subtitle } from '../src/app/modules/page/components';
-import { Main, Head, Introduction, Logo, Footer } from '../src/app/modules/layout/components';
+import { Title, Subtitle } from '../modules/page/components';
+import { Main, Head, Introduction, Logo, Footer } from '../modules/layout/components';
 
 const Index = () => {
   return (

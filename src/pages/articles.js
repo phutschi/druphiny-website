@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import { Main, Head, Container } from '../src/app/modules/layout/components';
+import { Main, Head, Container } from '../modules/layout/components';
 
 const Articles = () => (
   <Main white>
