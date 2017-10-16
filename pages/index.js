@@ -6,11 +6,7 @@ import Link from 'next/link';
 import Title from '../page/components/title';
 import Subtitle from '../page/components/subtitle';
 
-import Main from '../layout/components/main';
-import Head from '../layout/components/head';
-import Introduction from '../layout/components/introduction';
-import Logo from '../layout/components/logo';
-import Footer from '../layout/components/footer';
+import { Main, Head, Introduction, Logo, Footer } from '../layout/components';
 
 const Index = () => {
   return (

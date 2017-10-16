@@ -9,3 +9,5 @@ type Props = {
 const BlogList = ( { children }: Props ) => <div>{children}</div>;
 
 BlogList.defaultProps = { children : [] };
+
+export default BlogList
