@@ -3,14 +3,14 @@
 import * as React from 'react';
 import Fontawesome from '../../../layout/components/fontawesome';
 
-const HeaderCart = () => (
-  <div className="header-cart">
+const CartHeader = () => (
+  <div className="cart-header">
     <ul>
       <Fontawesome name="shopping-cart" />
       <span className="counter" />
     </ul>
     <style jsx>{`
-      .header-cart {
+      .cart-header {
         width: 95%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -21,18 +21,18 @@ const HeaderCart = () => (
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
       }
-      .header-cart ul {
+      .cart-header ul {
         padding: 1.2em 0 0.5em;
       }
-      .header-cart span {
+      .cart-header span {
         padding: 0 0 0 0.5em;
         color: #2b2d42;
       }
-      .header-cart span:nth-of-type(2) {
+      .cart-header span:nth-of-type(2) {
         cursor: pointer;
       }
     `}</style>
   </div>
 );
 
-export default HeaderCart;
+export default CartHeader;
