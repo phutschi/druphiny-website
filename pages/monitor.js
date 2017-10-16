@@ -8,7 +8,7 @@ import { HorizontalList, HorizontalListItem } from '../src/stats/components';
 const Monitor = () => (
   <Main>
     <Head title="druphiny > monitor" />
-    <Container width="100%">
+    <Container>
       <HorizontalList region="Chuck Norris">
         <HorizontalListItem metric="Humidity" value="70%" />
         <HorizontalListItem metric="Temp" value="28˚C" />

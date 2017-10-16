@@ -12,7 +12,6 @@ const Container = ( { children, width }: Props ) => (
     {children}
     <style jsx>{`
       .container {
-        width: 80%;
         max-width: ${width};
         margin: 70px 10%;
       }
@@ -22,7 +21,7 @@ const Container = ( { children, width }: Props ) => (
 
 Container.defaultProps = {
   children : [],
-  width    : '900px',
+  width    : '80%',
 };
 
 export default Container;
