@@ -51,6 +51,8 @@ const Head = ( props: Props ) => (
     <meta property="og:image" content={props.ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   </NextHead>
 );
 
