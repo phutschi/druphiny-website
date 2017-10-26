@@ -1,4 +1,14 @@
 {
+  "plugins": [
+    [
+      "module-alias",
+      [{ "src": "./src/modules/layout", "expose": "layout" }],
+      [{ "src": "./src/modules/page", "expose": "page" }],
+      [{ "src": "./src/modules/posts", "expose": "posts" }],
+      [{ "src": "./src/modules/products", "expose": "products" }],
+      [{ "src": "./src/modules/stats", "expose": "stats" }]
+    ]
+  ],
   "env": {
     "development": {
       "presets": "next/babel"

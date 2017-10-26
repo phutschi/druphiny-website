@@ -17,6 +17,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "babel-plugin-module-alias": "^1.6.0",
     "comma-number": "^2.0.0",
     "detect-browser": "^2.0.0",
     "dotenv": "^4.0.0",
