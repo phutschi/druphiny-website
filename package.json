@@ -9,8 +9,12 @@
     "next": "next ./src",
     "dev": "node server.js",
     "build": "next build ./src",
+    "export": "next export -o ./.export/ ./src",
+    "analyze": "ANALYZE=1 yarn build",
     "flow": "flow",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "comma-number": "^2.0.0",
