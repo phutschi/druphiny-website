@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 
-import { Main, Head, Container } from '../modules/layout/components';
-import { CartHeader, ProductCard, ProductRow } from '../modules/products/components';
+import { Main, Head, Container } from 'UI/Layout';
+import { CartHeader, ProductCard, ProductRow } from 'UI/Products';
 
 const Merch = () => (
   <Main>

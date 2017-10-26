@@ -2,11 +2,11 @@
   "plugins": [
     [
       "module-alias",
-      [{ "src": "./src/modules/layout", "expose": "layout" }],
-      [{ "src": "./src/modules/page", "expose": "page" }],
-      [{ "src": "./src/modules/posts", "expose": "posts" }],
-      [{ "src": "./src/modules/products", "expose": "products" }],
-      [{ "src": "./src/modules/stats", "expose": "stats" }]
+      [{ "src": "./src/modules/layout/components", "expose": "UI/Layout" }],
+      [{ "src": "./src/modules/page/components", "expose": "UI/Page" }],
+      [{ "src": "./src/modules/posts/components", "expose": "UI/Posts" }],
+      [{ "src": "./src/modules/products/components", "expose": "UI/Products" }],
+      [{ "src": "./src/modules/stats/components", "expose": "UI/Stats" }]
     ]
   ],
   "env": {
