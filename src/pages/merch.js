@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { Main, Head, Container } from 'UI/Layout';
-import { CartHeader, ProductCard, ProductRow } from 'UI/Products';
+import { CartHeader, ProductCard, ProductRow } from '../modules/products/components';
 
 const Merch = () => (
   <Main>
