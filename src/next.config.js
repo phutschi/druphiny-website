@@ -19,5 +19,3 @@ module.exports = {
     return config;
   },
 };
-
-//https://druphiny.b-cdn.net

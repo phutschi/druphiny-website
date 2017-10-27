@@ -11,6 +11,13 @@
           "UI/Stats": "./src/modules/stats/components"
         }
       }
+    ],
+    [
+      "transform-assets-import-to-string",
+      {
+        "baseDir": "/static",
+        "baseUri": "https://druphinyfiles.b-cdn.net"
+      }
     ]
   ],
   "env": {
@@ -19,14 +26,6 @@
     },
     "production": {
       "presets": "next/babel"
-    },
-    "env": {
-      "development": {
-        "plugins": ["inline-dotenv"]
-      },
-      "production": {
-        "plugins": ["transform-inline-environment-variables"]
-      }
     },
     "test": {
       "presets": [
