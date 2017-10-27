@@ -21,8 +21,16 @@ app.prepare().then( () => {
     renderAndCache( req, res, '/' );
   } );
 
-  server.get( '/about', ( req, res ) => {
-    renderAndCache( req, res, '/about' );
+  server.get( '/merch', ( req, res ) => {
+    renderAndCache( req, res, '/merch' );
+  } );
+
+  server.get( '/events', ( req, res ) => {
+    renderAndCache( req, res, '/events' );
+  } );
+
+  server.get( '/monitor', ( req, res ) => {
+    renderAndCache( req, res, '/monitor' );
   } );
 
   server.get( '*', ( req, res ) => {
