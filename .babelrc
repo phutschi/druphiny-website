@@ -1,12 +1,16 @@
 {
   "plugins": [
     [
-      "module-alias",
-      [{ "src": "./src/modules/layout/components", "expose": "UI/Layout" }],
-      [{ "src": "./src/modules/page/components", "expose": "UI/Page" }],
-      [{ "src": "./src/modules/posts/components", "expose": "UI/Posts" }],
-      [{ "src": "./src/modules/products/components", "expose": "UI/Products" }],
-      [{ "src": "./src/modules/stats/components", "expose": "UI/Stats" }]
+      "module-resolver",
+      {
+        "alias": {
+          "UI/Layout": "./src/modules/layout/components",
+          "UI/Page": "./src/modules/page/components",
+          "UI/Posts": "./src/modules/posts/components",
+          "UI/Products": "./src/modules/products/components",
+          "UI/Stats": "./src/modules/stats/components"
+        }
+      }
     ]
   ],
   "env": {

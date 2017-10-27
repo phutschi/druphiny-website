@@ -1,11 +1,12 @@
 // @flow
 
 import * as React from 'react';
-// import Fontawesome from 'UI/Layout';
+import { Fontawesome } from 'UI/Layout';
 
 const CartHeader = () => (
   <div className="cart-header">
     <ul>
+      <Fontawesome name="rocket" />
       <span className="counter" />
     </ul>
     <style jsx>{`
