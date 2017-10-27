@@ -16,6 +16,11 @@ const ssrCache = new LRUCache( {
 app.prepare().then( () => {
   const server = express();
 
+  server.use( ( req, res, next ) => {
+    res.set( 'Vary', 'Accept-Encoding' );
+    next();
+  } );
+
   // Use the `renderAndCache` utility defined below to serve pages
   server.get( '/', ( req, res ) => {
     renderAndCache( req, res, '/' );
