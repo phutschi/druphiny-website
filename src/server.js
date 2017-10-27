@@ -61,6 +61,7 @@ function renderAndCache( req, res, pagePath, queryParams ) {
 
   // If we have a page in the cache, let's serve it
   if ( ssrCache.has( key ) ) {
+    res.set( 'X-NEXT-CACHE', 'HIT' );
     res.send( ssrCache.get( key ) );
 
     return;
@@ -73,6 +74,7 @@ function renderAndCache( req, res, pagePath, queryParams ) {
       // Let's cache this page
       ssrCache.set( key, html );
 
+      res.set( 'X-NEXT-CACHE', 'MISS' );
       res.send( html );
     } )
     .catch( err => {
