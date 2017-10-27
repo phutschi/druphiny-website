@@ -1,10 +1,23 @@
-const isProd = process.env.NODE_ENV === 'production';
+const { ANALYZE, NODE_ENV, CDN_URL } = process.env;
 
 module.exports = {
-  assetPrefix : isProd ? 'https://druphiny.b-cdn.net' : '',
+  assetPrefix : CDN_URL && NODE_ENV === 'production' ? CDN_URL : '',
   webpack     : config => {
     config.node = { fs : 'empty' };
+
+    if ( ANALYZE ) {
+      const { BundleAnalyzerPlugin } = require( 'webpack-bundle-analyzer' );
+
+      config.plugins.push(
+        new BundleAnalyzerPlugin( {
+          analyzerMode   : 'static',
+          reportFilename : './analyze-report.html',
+        } ),
+      );
+    }
 
     return config;
   },
 };
+
+//https://druphiny.b-cdn.net
