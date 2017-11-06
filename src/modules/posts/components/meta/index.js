@@ -36,6 +36,8 @@ class Meta extends React.Component<Props, State> {
     }
   }
 
+  raf: any;
+
   render() {
     const { date, views } = this.props;
     const { highlight } = this.state;

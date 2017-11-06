@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Main = ( { children, white }: Props ) => (
-  <div className={`main ${white ? 'white' : null}`}>
+  <div className={`main ${white ? 'white' : ''}`}>
     <div className="return">
       <Link prefetch href="/">
         <a>druphiny.co</a>
